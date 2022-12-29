@@ -1,0 +1,19 @@
+<h1>Hello {{ firstName }}</h1>
+
+<p>This is my first webpage from codemy tutorial!!</p>
+
+{{ stuff|striptags }}
+<br>
+{{ title|title }}
+
+<h3>Friends List</h3>
+{% for friend in friendsList %}
+   {% if friend == "Ricky Howard" %}
+      Ni orang ngeselin bener: 
+   {% endif %}
+
+{{ friend }}
+<br>
+{% endfor %}
+
+{{ friendsList.3 }}
